@@ -193,7 +193,7 @@ m_exc <- wilcox.test(number ~ stim, data=no_sig %>% filter(type == "excitatory")
 
 # cross predictions for tones and usvs 
 rm(list = ls())
-summary_file <- read.csv('~/rds/projects/kozlovlab_rds2/live/Grace/jphys/usv_tones/cross_predictions_usv_tones.csv')
+summary_file <- read.csv('~/rds/projects/kozlovlab_rds2/live/jphys/tones_usv/results/csv_format/cross_predictions_usv_tones.csv')
 
 cross_predict <- summary_file %>% 
     extract(file, "unit_name", ".*mne_models/(.*)_model.mat") %>%
